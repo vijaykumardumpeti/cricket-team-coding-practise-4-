@@ -103,7 +103,7 @@ app.get("/players/:playerId/", async (request, response) => {
 
 app.put("/players/:playerId/", async (request, response) => {
   let { playerId } = request.params;
-  let {playerName,jerseyNumber,role}request.body;
+  let {playerName,jerseyNumber,role}=request.body;
 
   let updatePlayersQuery = `
   UPDATE 
