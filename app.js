@@ -64,7 +64,7 @@ app.post("/players/", async (request, response) => {
 
   let addPlayerQuery = `
         INSERT INTO 
-        cricket_team (playerName,jerseyNumber, role)
+        cricket_team (player_name,jersey_number, role)
         VALUES 
         (
             ${playerName},
